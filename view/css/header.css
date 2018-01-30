@@ -1,0 +1,294 @@
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+header{
+	position:relative;
+	margin:4px auto;
+	width:1100px;
+	font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    font-size: 13px;
+}
+
+header .localLC{
+	position:absolute;
+	right:10px;
+	top:0px;
+	display:inline-block;
+}
+
+header #loginCliente, header #sacola{
+	text-transform:uppercase;
+	font-weight:bold;
+	background:#000;
+	color:#fff;
+	display:inline-block;
+	border-radius:5px;
+	padding:2px 20px 2px 10px;
+	cursor:pointer;
+}
+
+
+header #loginCliente img, header #sacola img{
+	width:30px;
+	vertical-align:middle
+}
+
+header #loginCliente a{
+	color:#fff;
+	text-decoration:none;
+}
+header #sacola span{
+	color:red;
+	margin-right:2px;
+	padding:3px 5px;
+	background:#fff;
+	border-radius:10%;
+	font-size:12px;
+	position:relative;
+}
+
+header #logoSite{
+	margin:25px;
+}
+
+header #sacola span:after{
+	content: '';
+	position:absolute;
+	left:100%;
+	top:20%;
+	border:5px solid transparent;
+    border-left-color:#fff
+}
+
+header #sacola #conteudo-da-sacola:before{
+	content: '';
+	position:absolute;
+	bottom:100%;
+	right:-1px;
+	width:141px;
+	height:15px;
+    background:#000
+}
+
+header #sacola #conteudo-da-sacola{
+	position:absolute;
+	top:130%;
+	right:0px;
+	z-index:2;
+	background:#fff;
+	border:1px solid #000;
+	width:350px;
+	color:#000;
+	padding:4px;
+	display:none;
+}
+
+header #sacola #conteudo-da-sacola #item{
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+header #sacola #conteudo-da-sacola img{
+	width:50px;
+	height:50px;
+	border:1px solid rgba(0,0,0,0.1);
+	margin:4px;
+}
+
+header #sacola #conteudo-da-sacola label{
+	display:inline-block;
+	vertical-align:middle;
+	font-size:11px;
+}
+
+header #sacola #conteudo-da-sacola h4{
+	margin-left:30px
+}
+
+header #opCliente{
+	margin:5px;
+}
+
+header #opCliente a{
+	display:inline-block;
+	background:#f9f9f9;
+	padding:1px 3px;
+	margin:3px;
+	padding:5px 10px;
+	border-radius:2px;
+	box-shadow:1px 1px 1px #888;
+	border:1px solid rgba(0,0,0,0.1);
+	text-transform:uppercase;
+	cursor:pointer;
+}
+header #opCliente a:hover{
+	background: #000;
+	color:#fff;
+	transition-duration:0.4s;
+}
+header .local-filtros{
+	width:95%;
+	padding:10px;
+	background:#000;
+	margin:2px auto;
+	border:1px solid rgba(0,0,0,0.08);
+}
+
+#filtros div[id$=CS]{
+	background:white;
+	display:inline-block;
+	width:150px;
+	position:relative;
+	border-radius:1px;
+	vertical-align:top;
+	border:1px solid rgba(0,0,0,0.5);
+}
+
+
+#filtros div.foco:after{
+	content:'';
+	width:150px;
+	height:15px;
+	left:-1px;
+	background:#fff;
+	position:absolute;
+	border-left:1px solid rgba(0,0,0,0.5);
+	border-right:1px solid rgba(0,0,0,0.5);
+}
+
+#filtros div[id$=noCS] a:before{
+	content:'>';
+	position:absolute;
+	left:8px;
+	top:8px;
+	font-size:15px;
+	transform: rotate(90deg);
+}
+
+#filtros div[id$=noCS] a{
+	display:block;
+	padding:10px;
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+#filtros #search{
+	display:inline-block;
+	height:35px;
+	position:relative;
+}
+
+#filtros #search select{
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	cursor:pointer;
+	font-weight:bold;
+	padding:9px 5px;
+	border-radius:2px;
+	border:none;
+	outline:none;
+	border:1px solid rgba(0,0,0,0.5);
+	vertical-align:top;
+}
+
+#filtros #search input{
+	width:350px;
+	height:37px;
+	border:none;
+	outline:none;
+	padding:5px 10px;
+	vertical-align:top;
+	border:1px solid rgba(0,0,0,0.5);
+	border-radius:1px;
+}#filtros #search button{
+	width:40px;
+	margin:0px;
+	position:absolute;
+	top:1px;
+	height:35px;
+	border:none;
+	outline:none;
+	background:url('../img/icones/lupa.png') no-repeat 40%;
+	background-color:#f9f9f9;
+	background-size:20px;
+	cursor:pointer;
+	opacity:0.9;
+}
+#filtros #search button:hover{
+	opacity:1;
+}
+
+#localCS{
+	border:1px solid rgba(0,0,0,0.3);
+	padding:5px;
+}
+
+#localCS div#m{display:none;}
+
+
+#localCS div div{
+	display:inline-block;
+	position:relative;
+	text-transform:uppercase;
+	cursor:pointer;
+	border:1px solid #999;
+	vertical-align:top;
+	margin:2px;
+	min-width:160px;
+}
+#localCS div div p:before{
+	content:'>';
+	position:absolute;
+	left:8px;
+	top:11px;
+	font-size:15px;
+	transform: rotate(90deg);
+}
+#localCS div div p{
+	font-weight:bold;
+	text-align:center;
+}
+#localCS div div p a{
+	font-weight:bold;
+	padding:0px 20px;
+	height:100%;
+	display:block;
+}
+
+
+#localCS div div ul{
+	list-style-type:none;
+	display:none;
+	padding:0;
+	background:#fff;
+	width:100%;
+	top:30px;
+	left:-1px;
+	position:absolute;
+	z-index:2;
+	border:1px solid rgba(0,0,0,0.3);
+}
+
+#localCS div div ul li{
+	background:#f9f9f9;
+	margin:3px 4px;
+	border-radius:2px;
+	border:1px solid rgba(0,0,0,0.1);
+}
+
+#localCS div div ul li a{
+	color:#000;
+	height:100%;
+	display:block;
+	padding:2px 10px;
+}
+
+#localCS div div ul li:hover{
+	font-weight:bold;
+	box-shadow:1px 1px 1px rgba(0,0,0,0.1);
+}

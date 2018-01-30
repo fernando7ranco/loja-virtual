@@ -1,0 +1,298 @@
+body{
+    margin:0px;
+    width:100%;
+    FONT-FAMILY: Arial,Verdana, "Trebuchet MS",Georgia, Lucida,Helvetica,Tahoma, sans-serif;
+    font-size: 12px;
+    color:#333;
+}
+
+#titleTooltip{
+    font-weight:bold;
+    position:absolute;
+    border-radius:3px;
+    color:white;
+    background:#1E1E1E;
+    padding:5px 15px;
+    font-family:monospace;
+    z-index:10;
+    text-transform:uppercase;
+    font-size:13px;
+    max-width:180px;
+    text-align:center;
+    display:none;
+}
+
+#caixaCentro{
+    width:1000px;
+    margin:1% auto;
+    padding:30px 20px;
+    border-top:1px solid rgba(0,0,0,0.07);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+	
+.slides-show{
+	width:1000px;
+	margin:5px auto;
+	margin-bottom:30px;
+	border:1px solid rgba(0,0,0,0.1);
+	height:400px;
+	padding:10px 15px;
+	position:relative;
+	background:#f9f9f9;
+}
+.slides-show button#left{
+	position:absolute;
+	left:-9px;
+	top:45%;
+}
+.slides-show button#right{
+	position:absolute;
+	right:-9px;
+	top:45%;
+}
+.slides-show button{
+	padding:0px 9px;
+	text-align:center;
+	font-size:20px;
+	cursor:pointer;
+	background:#000;
+	color:#fff;
+	border:1px solid rgba(0,0,0,0.1);
+}
+
+#box-slides-show{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:#fff;
+}
+#scroll-box-slides-show{
+	width:1000%;
+	height:100%;
+}
+
+#scroll-box-slides-show #produto{
+	vertical-align:top;
+	width:326px;
+	height:93%;
+	border:1px solid rgba(0,0,0,0.1);
+	box-shadow:1px 1px 1px #888;
+	margin:4px 2px;
+	padding:8px 0px;
+	display:inline-block;
+	font-size:30px;
+	color:white;
+}
+
+#scroll-box-slides-show #produto a{
+	text-decoration:none;
+	color:#444;
+	font-size:13px;
+}
+
+ #produto #img{
+	width:260px;
+	height:240px;
+}
+#produto sub, #produto label{
+	display:block;
+}
+
+#produto div{
+	margin:3px 0px;
+}
+
+ #produto  strong{
+	text-decoration: line-through;
+	color:red;
+	font-size:10px;
+} #produto  b{
+	color:#4CAF50;
+	font-size:15px;
+}
+
+#produto div span{
+	display:inline-block;
+	background:#f0f0f0;
+	padding:1px 3px;
+	margin:3px;
+}
+#avaliacoesCincoEstrelasDoProduto {
+	font-size:10px;
+	margin:10px;
+}#avaliacoesCincoEstrelasDoProduto #localPorcentagemEstrelas{
+	display:inline-block;
+	width:75px;
+	height:15px;
+	position:relative;
+
+}
+#avaliacoesCincoEstrelasDoProduto #localPorcentagemEstrelas div:nth-child(1){
+	background:#000;
+	height:15px;
+	z-index:1;
+	position:absolute;
+	
+}
+#avaliacoesCincoEstrelasDoProduto #localPorcentagemEstrelas div:nth-child(2){
+	position:absolute;
+	z-index:2;
+}
+#avaliacoesCincoEstrelasDoProduto img{
+	width:15px;
+	height:15px;
+}
+
+#caixaCentro #autenficacoes span{
+    display:inline-block;
+    background:#444;
+    width:200px;
+    text-align:center;
+    padding:8px;
+    color:#fff;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    text-transform:uppercase;
+    border:1px solid rgba(0,0,0,0.09);
+    border-bottom:none;
+	margin-bottom:-1px;
+	margin-left:8px;
+}
+#caixaCentro #autenficacoes span#foco{
+	background:#fff;
+	color:#000;
+	text-decoration:underline;
+}
+
+
+#forms{
+	padding-bottom:30px;
+    border:1px solid rgba(0,0,0,0.09);
+}
+
+#caixaCentro #autenficacoes #login{
+	margin:6% auto;
+}
+
+#caixaCentro #autenficacoes #cadastro{
+	display:none;
+}
+
+#caixaCentro #autenficacoes #divisorCadastro{
+	display:inline-block;
+	width:45%;
+	height:100%;
+	vertical-align:middle;
+}
+
+#caixaCentro #forms label{
+	display:block;
+	border-radius:1px 1px 0px 0px;
+	width:300px;
+	background:#666;
+	text-align:left;
+	color:white;
+	padding:3px 3px 0px 6px;
+}
+
+#caixaCentro #forms p #textoInput:before{
+    content:'';
+    position:absolute;
+    right:100%;
+    top:20%;
+    border:6px solid transparent;
+    border-right-color:#000;
+}
+
+#caixaCentro #forms p #textoInput{
+    position:absolute;
+    left:97%;
+    top:10px;
+    z-index:2;
+    background:#000;
+    width:200px;
+    padding:8px 10px;
+    border-radius:3px;
+    color:white;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:10px;
+}
+#caixaCentro #esquerda #login p a:not(#textoInput){
+    text-decoration:none;
+    margin-left:50px;	
+    color:#555;
+}#caixaCentro #esquerda #login p a:not(#textoInput):hover{
+    color:#000;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+#caixaCentro p{
+    position:relative;
+    font-size:12px;
+	width:400px;
+}
+#caixaCentro #cadastro p img{
+    width:20px;
+    position:absolute;
+    right:30px;
+    top:10px
+}
+
+#caixaCentro form input[placeholder]{
+    width:320px;
+    padding:8px 8px;
+    padding-right:40px;
+    outline:none;
+    border:1px solid #dedede;
+    background-color:rgba(0,0,0,0.02);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.09);
+	font-size:12px;
+}
+#caixaCentro form select{
+	width:380px;
+    height:35px;
+    padding:8px 8px;
+    padding-right:40px;
+    outline:none;
+    border:1px solid #dedede;
+    background-color:rgba(0,0,0,0.02);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.09);
+	font-size:12px;
+	cursor:pointer;
+}
+#caixaCentro form input[id=Mlogado]{
+    margin-left:-30px;
+}
+#caixaCentro form input[id=vsenha]{
+    margin-left:-190px;
+}
+#caixaCentro form button[type=button]{
+    width:340px;
+    margin:10px;
+    padding:8px;
+    outline:none;
+    border:1px solid rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:15px;
+    color:white;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    background:#444;
+}
+#caixaCentro form button[type=button]:active{
+    background:#000;
+	transition-duration:0.2s;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+#cadastro #reenviarEmail{
+	cursor:pointer;
+	border-radius:3px;
+    box-shadow: 1px 1px rgba(0,0,0,0.2);
+	border:1px solid #888;
+}
+

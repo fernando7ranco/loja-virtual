@@ -1,0 +1,348 @@
+
+h1,h2,h3,h4{
+	color:#555
+}
+
+
+#localProduto{
+    width:1000px;
+    margin:10px auto;
+    padding:20px 20px;
+    border-top:1px solid rgba(0,0,0,0.07);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    position:relative;
+    color: #333;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    font-size: 13px;
+}
+#localProduto h3#caminho a{
+	text-transform:uppercase;
+	color:#2f50d8;
+}
+
+#localProduto #nomeProduto{
+	font-size:22px;
+	text-transform:capitalize;
+}
+
+#imagensProduto{
+	display:inline-block;
+	padding:6px;
+	width:600px;
+	height:465px;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+}
+#imagensProduto div{
+	display:inline-block;
+	vertical-align:top;
+}
+
+#imagensProduto div:nth-child(1){
+	width:80px;
+
+}#imagensProduto div:nth-child(1) img{
+	width:70px; 
+	height:70px;
+	border:2px solid transparent;
+}#imagensProduto div:nth-child(1) img:hover, #imagensProduto div:nth-child(1) #imgFoco{
+	border:2px solid red;
+	cursor:pointer;
+	opacity:0.4;
+}
+
+#imagensProduto div:nth-child(2){
+	width:400px;
+
+}#imagensProduto div:nth-child(2) img{
+	width:500px; 
+	height:460px;
+	margin:2px;
+}
+
+#infoProduto{
+	display:inline-block;
+	width:330px;
+	margin-left:8px;
+	height:465px;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+	vertical-align:top;
+	padding:6px 20px;
+	color:#848484;
+	font-size:14px;
+}
+#btInserirNaSacola{
+	background:#000;
+	color:white;
+	cursor:pointer;
+	display:block;
+	margin:4px 0;
+	padding:4px 8px;
+	text-transform:uppercase;
+	border-radius:4px;
+}
+
+#btInserirNaSacola:hover{
+	box-shadow: 2px 1px 2px #999;
+}
+
+#btInserirNaSacola img{
+	width:25px;
+	vertical-align:middle;
+}
+
+#infoProduto div strong{
+	text-decoration: line-through;
+	color:red;
+	font-size:12px;
+}#infoProduto div b{
+	color:#4CAF50;
+	font-size:16px;
+}
+
+#infoProduto div{
+	margin:4px 0px;
+	word-wrap: break-word;
+}
+
+#infoProduto div:nth-child(3) a{
+	background:rgba(0,0,0,0.1);
+	display:inline-block;
+	padding:3px 6px;
+	margin: 2px 4px;
+	border-radius:2px;
+	font-weight:bold;
+	color:#000;
+	box-shadow: 1px 1px 1px #999;
+}
+#infoProduto div label{
+	opacity:0.6;
+}
+
+#avaliacoesCincoEstrelasDoProduto #localPorcentagemEstrelas{
+	display:inline-block;
+	width:100px;
+	height:20px;
+	position:relative;
+}
+#avaliacoesCincoEstrelasDoProduto #localPorcentagemEstrelas div:nth-child(1){
+	background:#000;
+	height:20px;
+	z-index:1;
+	position:absolute;
+	
+}
+#avaliacoesCincoEstrelasDoProduto #localPorcentagemEstrelas div:nth-child(2){
+	position:absolute;
+	z-index:2;
+}
+#avaliacoesCincoEstrelasDoProduto img{
+	width:20px;
+	height:20px;
+}
+
+#titleTooltip{
+    font-weight:bold;
+    position:absolute;
+    border-radius:3px;
+    color:white;
+    background:#1E1E1E;
+    padding:5px 15px;
+    font-family:monospace;
+    z-index:10;
+    text-transform:uppercase;
+    font-size:13px;
+    max-width:180px;
+    text-align:center;
+}  
+#btProdutoFavorito{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	vertical-align:bottom;
+}
+#btProdutoFavorito div{
+	width:24px;
+	height:24px;
+}#btProdutoFavorito div:hover, #btProdutoFavorito div#foco{
+	background:#000;
+
+}.btProdutoFavorito:active{
+	opacity:0.3;
+}
+
+#btProdutoFavorito img{
+	margin: -1px;
+	width:26px;
+	height:26px;
+	cursor:pointer;
+}
+
+#infoProduto div #maisDetalhes{
+	color:white;
+	text-transform:uppercase;
+	cursor:pointer;
+	background:#000;
+	padding:3px 10px;
+	border-radius:2px;
+	font-weight:bold;
+}
+#infoProduto div #maisDetalhes span{
+	font-family:impact
+}
+
+#infoProduto #infoDetalhes:before{
+	content:'';
+	position:absolute;
+	bottom:100%;
+	left:20px;
+	border:8px solid transparent;
+    border-bottom-color:#000;
+}
+#infoProduto #infoDetalhes{
+	background:#000;
+	color:white;
+	padding:8px;
+	position:relative;
+	display:none;
+	margin-top:20px;
+}
+
+#infoProduto #infoDetalhes span{
+	display:block;
+	font-weight:bold;
+	font-size:13px;
+	text-align:center;
+	text-transform:uppercase;
+	margin:5px 0px;
+}
+
+
+#produtoRelacionados{
+	width:100%;
+	margin:35px auto;
+	border:1px solid rgba(0,0,0,0.1);
+	background:#eeeeee;
+}
+
+#produtoRelacionados #PR{
+	background:#fff;
+	width:160px;
+	border:1px solid rgba(0,0,0,0.1);
+	margin:8px 2px;
+	display:inline-block;
+	padding:5px 0px;
+	box-shadow: 1px 1px 1px #999;
+}
+#produtoRelacionados #PR a{
+	text-decoration:none;
+	text-align:center;
+	color:#000;
+}
+#produtoRelacionados #PR img{
+	width:100%;
+	height:150px;
+}
+#produtoRelacionados #PR label{
+	display:block;
+}
+
+
+#produtoRelacionados #PR strong{
+	text-decoration: line-through;
+	color:red;
+	font-size:10px;
+}#produtoRelacionados #PR b{
+	color:#4CAF50;
+	font-size:15px;
+}
+
+
+#feedbackAvaliacoes{
+	background:#eeeeee;
+	padding:10px 20px;
+	width:400px;
+	margin:10px 0;
+	border:1px solid rgba(0,0,0,0.1);
+}
+
+#feedbackAvaliacoes #avaliacoesCincoEstrelasDoProduto{
+	background:white;
+	padding:5px 10px;
+	margin:5px 2px;
+	border-radius:2px;
+	font-size:13px;
+	display:inline-block;
+	border:1px solid rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 1px #999;
+}	
+
+#feedbackAvaliacoes #grafAvaliacoes{
+	background:white;
+	width:350px;
+	padding:5px 10px;
+	margin:4px 2px;
+	font-size:13px;
+	border:1px solid rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 1px #999;
+}	
+
+#grafAvaliacoes #localPorcentagemGraf{
+	display:inline-block;
+	width:300px;
+	height:20px;
+	position:relative;
+	vertical-align:bottom;
+}
+#grafAvaliacoes #localPorcentagemGraf div{
+	height:20px;
+	position:absolute;
+	padding:1px 5px;
+	border-radius:1px;
+}
+
+#grafAvaliacoes img{
+	width:15px;
+	height:15px;
+	background-color:#000;
+}
+
+#avaliacoesDeClientes{
+	background:#eeeeee;
+	padding:10px;
+	width:800px;
+	border:1px solid rgba(0,0,0,0.1);
+}
+#avaliacoesDeClientes #avalicaoCliente{
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+#avaliacoesDeClientes #avalicaoCliente div[id^=find]{
+	display:inline-block;
+	background:white;
+	padding:5px;
+	margin:4px;
+	min-height:55px;
+	font-size:13px;
+	vertical-align:top;
+	border:1px solid rgba(0,0,0,0.07);
+	box-shadow: 1px 1px 1px #999;
+}
+#avaliacoesDeClientes #avalicaoCliente #find1{
+	width:250px;
+}
+
+#avaliacoesDeClientes #avalicaoCliente #find1 #user{
+	width:40px;
+	border:1px solid rgba(0,0,0,0.05);
+	border-radius:2px;
+}
+
+#avaliacoesDeClientes #avalicaoCliente #find2{
+	width:500px;
+	position:relative;
+}
+
+#avaliacoesDeClientes #avaliacoesCincoEstrelasDoProduto{
+	position:absolute;
+	bottom:3px;
+	right:50px;
+}	

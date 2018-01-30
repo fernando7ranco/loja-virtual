@@ -1,0 +1,75 @@
+
+.local-itens-da-sacola{
+    width:1000px;
+    margin:10px auto;
+    padding:20px 20px;
+    border-top:1px solid rgba(0,0,0,0.07);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    position:relative;
+    color: #333;
+    font-family: "Roboto",UILanguageFont,Arial,sans-serif;
+    font-size: 13px;
+}
+
+.local-itens-da-sacola table{
+	width:100%;
+}.local-itens-da-sacola table th{
+	text-transform:uppercase;
+}
+
+.local-itens-da-sacola table td{
+
+	border-bottom:1px solid #f0f0f0;
+}
+
+.local-itens-da-sacola table tr td:not(:nth-child(1)){
+	text-align:center;
+}
+
+.local-itens-da-sacola #item img{
+	width:120px;
+	vertical-align:middle;
+}
+
+.local-itens-da-sacola #item  strong{
+	text-decoration: line-through;
+	color:red;
+	font-size:12px;
+}.local-itens-da-sacola #item  b{
+	color:#4CAF50;
+	font-size:15px;
+}
+
+.local-itens-da-sacola #item input{
+	border-radius:2px;
+	padding:2px 4px;
+}
+
+.local-itens-da-sacola #item button{
+	border-radius:2px;
+	padding:2px 4px;
+	cursor:pointer;
+}
+
+#local-finalizar {
+	font-weight:bold;
+	margin:10px 5px;
+}
+
+#local-finalizar input{
+	border-radius:2px;
+	padding:5px 8px;
+	margin:3px 15px;
+	border:1px solid #999;
+}
+
+#local-finalizar button{
+	border-radius:2px;
+	padding:8px 10px;
+	background:#000;
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+	border:1px solid #f0f0f0;
+}

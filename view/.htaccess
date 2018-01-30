@@ -1,0 +1,24 @@
+RewriteEngine On
+Options All -Indexes
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+
+RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^inicio$ index
+
+RewriteRule ^inicio=entrar$ index.php?entrar=true
+
+RewriteRule ^produtos\&pag=([0-9])$ produtos.php?pagina=$1
+
+RewriteRule ^produtos=\[([a-zA-Z\-\+]+)\]$ produtos.php?GCS=$1
+RewriteRule ^produtos?order=([0-9]+)&search=([A-Za-zÀ-ú0-9\-]+)?$ produtos.php?ordem=$1&search=$2
+RewriteRule ^produtos=\[([a-zA-Z\-\+]+)\]\&order=([0-9])\&search=([A-Za-zÀ-ú0-9\-]+)?$ produtos.php?GCS=$1&ordem=$2&search=$3
+
+RewriteRule ^produtos=\[([a-zA-Z\-\+]+)\]\&pag=([0-9])$ produtos.php?GCS=$1&pagina=$2
+RewriteRule ^produtos?order=([0-9]+)&search=([A-Za-zÀ-ú0-9\-]+)?\&pag=([0-9])$ produtos.php?ordem=$1&search=$2&pagina=$3
+RewriteRule ^produtos=\[([a-zA-Z\-\+]+)\]\&order=([0-9])?\&search=([A-Za-zÀ-ú0-9\-]+)?\&pag=([0-9])$ produtos.php?GCS=$1&ordem=$2&search=$3&pagina=$4
+
+RewriteRule ^produto=([0-9]+)$ produto.php?produto=$1
